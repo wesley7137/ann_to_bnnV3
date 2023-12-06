@@ -1,0 +1,20 @@
+{
+    "neuron_states": [
+        {
+            "id": 0,
+            "fired": true,
+            "potential": -70,
+            "position": {"x": 1.0, "y": 2.0, "z": 3.0}
+        },
+        // ... More neurons
+    ],
+    "synaptic_weights": [
+        {
+            "from_neuron_id": 0,
+            "to_neuron_id": 1,
+            "weight": 0.1
+        },
+        // ... More synaptic weights
+    ],
+    "timestamp": "2023-12-03T10:15:30Z"
+}

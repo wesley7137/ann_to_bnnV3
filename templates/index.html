@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Neural Network Visualizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+
+    <!-- Import Map -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three/addons/": "/static/js/addons/"
+                
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+
+    <!-- Libraries from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+    <script src="https://cdn.socket.io/4.4.0/socket.io.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script type="module" src="/static/js/build/appV3.js"></script>
+    <script src="{{ url_for('static', filename='js/vendor/stats.min.js') }}"></script>
+    <!-- If you have TrackballControls in your static files -->
+    <!-- Additional custom scripts -->
+</body>
+</html>
